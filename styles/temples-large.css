@@ -30,9 +30,10 @@
     
     align-items: center;
   }
-  h2 {
+  h1 {
     margin-bottom: 0;
     margin-left: 0;
+    
   }
   nav ul li {
     display: inline-block;

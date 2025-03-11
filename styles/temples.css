@@ -72,8 +72,9 @@ label {
   transform: translateY(-9px) rotate(-45deg);
 }
 
-h2 {
+h1 {
   margin-bottom: 20px;
+  font-size: 24px;
 }
 nav.active {
   display: block;
@@ -125,7 +126,7 @@ main {
   max-width: 90%;
   margin: 0 auto;
 }
-h1 {
+h2 {
   text-align: center;
   margin: 0 auto;
   color: var(--blue-color);
