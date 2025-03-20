@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #ffffff;
+  --yellow-color: #FFCC00;
+  --blue-color: #0033A0;
+  --red-color: #EF3340;
+  --text-dark-color: #333333;
+  --text-medium-color: #F5F5F5;
+  --text-light-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--blue-color);
+  color: var(--text-light-color);
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  color: var(--text-light-color);
+}
+.other-color {
+  width: 100%;
+  height: 30%;
+  background-color: var(--yellow-color);
+  margin-bottom: 0px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  
+  
+}
+.hero-data,
+.hero-weather {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  line-height: 2;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text-dark-color);
+}
+.title img {
+  width: 100px;
+  height: 100px;
+}
+span {
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--blue-color);
+  color: var(--text-light-color);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: auto;
+  padding: 20px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Viszelle Chacon" />
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals" />
+    <title>Place</title>
+    <link rel="stylesheet" href="styles/place-smaller.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="scripts/place.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Venezuela</h1>
+      <div class="other-color"></div>
+    </header>
+    <main>
+      <div class="hero-container">
+        <div class="hero-image">
+          <picture>
+            
+            <source media="(max-width: 640px)" srcset="images/caracas-640.webp" />
+            <source media="(max-width: 1200px)" srcset="images/caracas-1200.webp" />
+            <img src="images/caracas-1800.webp" alt="Venezuela" />
+          </picture>
+        </div>
+        <div class="hero-content">
+          <div class="hero-data">
+            <div class="title">
+              <h2>Data</h2>
+            </div>
+            <p><span>Area:</span> 916,984 km2</p>
+            <p><span>Population:</span> 28.1 million</p>
+            <p><span>Capital:</span> Caracas</p>
+            <p><span>Language:</span> Spanish</p>
+            <p><span>Currency:</span> Bolivar</p>
+            <p><span>Time Zone:</span> UTC-4</p>
+            <p><span>Calling Code:</span> +58</p>
+            <p><span>Internet TLD:</span> .ve</p>
+          </div>
+          <div class="hero-weather">
+            <div class="title">
+              <h2>Weather</h2>
+              <img src="images/weather-icon.svg" alt="weather icon" />
+            </div>
+            <p><span>Temperature:</span> 25°C</p>
+            <p><span>Conditions:</span> Cloudy</p>
+            <p><span>Wind:</span> 10 m/s</p>
+            <p><span>Wind Chill:</span> 20°C</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;2025 ✨ Viszelle Chacon ✨ Venezuela</p>
+      <p>Last Updated: <span id="last-updated"></span></p>
+    </footer>
+  </body>
+</html>
