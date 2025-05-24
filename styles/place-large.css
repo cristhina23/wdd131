@@ -1,10 +1,17 @@
 @media screen and (min-width: 768px) {
-
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
   .hero-image img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
+  
 
   .hero-content {
     padding: 0;
@@ -69,7 +76,7 @@
   .hero-weather h2::after {
     content: "⛅";
     position: absolute;
-    right: 15px;
+    right: -20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.5rem;
