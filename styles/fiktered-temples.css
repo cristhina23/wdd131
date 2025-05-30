@@ -173,6 +173,7 @@ h2 {
   font-size: 18px;
   margin: 10px 0;
   color: var(--blue-color);
+  font-family: 'Inter', sans-serif;
 }
 
 .card p {
