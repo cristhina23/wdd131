@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Viszelle Chacon">
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/fiktered-temples.css" />
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="title-container">
+          <h1>Temples Album</h1>
+        </div>
+
+        <nav id="menu">
+          <ul>
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="old">Old</a></li>
+            <li><a href="#" id="new">New</a></li>
+            <li><a href="#" id="large">Large</a></li>
+            <li><a href="#" id="small">Small</a></li>
+          </ul>
+        </nav>
+        <div class="menu-activador">
+          <input type="checkbox" id="lanzador" />
+          <label id="menu-activador" for="lanzador" aria-label="Open menu">
+            <span class="menu-activador-linea"></span>
+            <span class="menu-activador-linea"></span>
+            <span class="menu-activador-linea"></span>
+          </label>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>Home</h2>
+      <div class="gallery-container" id="gallery-container">
+        
+
+        
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;2025 ✨ Viszelle Chacon ✨ Venezuela</p>
+      <p>Last Updated: <span id="last-updated"></span></p>
+    </footer>
+    <script  src="scripts/filtered-temples.js"></script>
+  </body>
+</html>
