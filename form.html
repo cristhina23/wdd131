@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+      content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From Practice">
+    <meta name="author" content="Viszelle Chacon">
     <title>From Practice</title>
     <link rel="stylesheet" href="./styles/form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script defer src="./scripts/getdates.js"></script>
   </head>
   <body>
     <header>
@@ -16,7 +21,7 @@
     <main>
       <form action="review.html" method="get">
         <label for="product">Product Name</label>
-        <select name="product" id="">
+        <select name="product" id="product">
           <option value="product1" selected disabled
             >Choose a Product...</option
           >
@@ -47,23 +52,26 @@
           </div>
         </div>
 
-        <label for="">Date of instalation</label>
+        <label for="date">Date of instalation</label>
         <input type="date" />
-        <label for=""
+        <label for="useful"
           >Which features do you find useful in the
           product?</label
         >
-        <label for="">Check all that apply</label>
-        <label for=""
+        <label for="apply">Check all that apply</label>
+        <label for="Durability"
           class="first"><input type="checkbox" />Durability
         </label>
-        <label for=""
+        <label for="Performance"
           ><input type="checkbox" />Performance
         </label>
-        <label for=""
+        <label for="Quality"
+          ><input type="checkbox" />Quality
+        </label>
+        <label for="design"
           class ="last"><input type="checkbox" />Design
         </label>
-        <label for=""
+        <label for="review"
           >Written Review <span>(Optional)</span></label
         >
         <textarea name="review" id=""></textarea>
@@ -72,7 +80,7 @@
         >
         <input type="text" />
 
-        <button>Post Review</button>
+        <input type="submit" class="button">Post Review</input>
       </form>
     </main>
     <footer>
@@ -80,6 +88,6 @@
       <p> <span id="last-updated"></span></p>
     </footer>
 
-    <script src="./scripts/getdates.js"></script>
+    
   </body>
 </html>

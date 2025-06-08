@@ -110,7 +110,7 @@ span {
   font-size: 16px;
 }
 
-button {
+.button {
   background-color: #0054dc;
   color: #fff;
   border: none;
@@ -120,7 +120,7 @@ button {
   font-size: 18px;
   transition: all 0.3s ease-in-out;
 }
-button:hover {
+.button:hover {
   background-color: #0062ff;
 }
 
