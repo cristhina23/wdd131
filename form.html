@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>From Practice</title>
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
+    <main>
+      <form action="review.html" method="get">
+        <label for="product">Product Name</label>
+        <select name="product" id="">
+          <option value="product1" selected disabled
+            >Choose a Product...</option
+          >
+          <option value="product2">Product 2</option>
+          <option value="product3">Product 3</option>
+        </select>
+        <label for="rating">Overall Rating</label>
+        <div class="rating">
+          <div>
+            <label for="rating">⭐</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="rating">⭐⭐</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="rating">⭐⭐⭐</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="rating">⭐⭐⭐⭐</label>
+            <input type="radio" />
+          </div>
+          <div>
+            <label for="rating">⭐⭐⭐⭐⭐⭐</label>
+            <input type="radio" />
+          </div>
+        </div>
+
+        <label for="">Date of instalation</label>
+        <input type="date" />
+        <label for=""
+          >Which features do you find useful in the
+          product?</label
+        >
+        <label for="">Check all that apply</label>
+        <label for=""
+          class="first"><input type="checkbox" />Durability
+        </label>
+        <label for=""
+          ><input type="checkbox" />Performance
+        </label>
+        <label for=""
+          class ="last"><input type="checkbox" />Design
+        </label>
+        <label for=""
+          >Written Review <span>(Optional)</span></label
+        >
+        <textarea name="review" id=""></textarea>
+        <label for="name"
+          >Your Name <span>(Optional)</span></label
+        >
+        <input type="text" />
+
+        <button>Post Review</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy;2025 ✨ Viszelle Chacon ✨ Venezuela</p>
+      <p> <span id="last-updated"></span></p>
+    </footer>
+
+    <script src="./scripts/getdates.js"></script>
+  </body>
+</html>
