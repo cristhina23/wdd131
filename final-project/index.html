@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="title" content="Perfect Diet - Create Your Personalized Diet in Minutes">
+    <meta name="author" content="Viszelle Chacon">
+    <meta name="description" content="Create a healthy and personalized diet plan in minutes. Find delicious meal plans tailored to your fitness goals and lifestyle.">
     <link
       rel="icon"
       href="/images/favicon.png"
       type="image/x-icon"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <meta
       property="og:title"
@@ -29,46 +21,18 @@
     />
     <meta
       property="og:image"
-      content="https://tusitio.com/images/hero.png"
+      content="https://cristhina23.github.io/wdd231/images/01_slimming.png"
     />
     <meta
       property="og:url"
-      content="https://tusitio.com/"
+      content="https://cristhina23.github.io/wdd231/final-project/"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Perfect Diet" />
+    <meta property="og:https://cristhina23.github.io/wdd131/final-project/" content="Perfect Diet" />
     <title>Perfect Diet</title>
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Joan&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
@@ -76,14 +40,13 @@
   <body>
     <div class="container">
       <header>
-        <figure
-          ><a href="index.html"
-            ><img src="/images/favicon.png" alt="logo" /></a
-        ></figure>
+       <figure>
+        <a href="index.html"><img src="images/logo.jpg" alt="logo de perfect diet"></a>
+       </figure>
         <input type="checkbox" id="lanzador" />
 
         <label
-          aria-label="open menu"
+          aria-label="Open menu"
           for="lanzador"
           class="menu-activador"
         >
@@ -91,36 +54,18 @@
           <span class="menu-activador-linea"></span>
           <span class="menu-activador-linea"></span>
         </label>
-        <nav>
+        <nav role="navigation">
           <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li
-              ><a href="howItWorks.html"
-                >How It Works</a
-              ></li
-            >
-            <li><a href="blog.html">Blog</a></li>
+            
             <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="form.html">Start Now</a></li>
           </ul>
         </nav>
         <div class="user">
-          <div class="user-picture">
-            <i
-              ><box-icon
-                type="solid"
-                color="#178606"
-                name="user"
-              ></box-icon
-            ></i>
-          </div>
           <div class="arrow">
-            <i
-              ><box-icon
-                color="#178606"
-                name="chevron-down"
-              ></box-icon
-            ></i>
+            +
           </div>
         </div>
         <div class="user-options">
@@ -132,7 +77,7 @@
           </ul>
         </div>
       </header>
-      <main>
+      <main role="main">
         <section class="hero padding">
           <div class="hero-text">
             <h3>¡Welcome to!</h3>
@@ -150,7 +95,7 @@
               <div class="button">
                 <a href="form.html">Start now</a> </div
               ><div class="button red">
-                <a href="plans.html">Plans</a>
+                <a href="#" aria-label="Plans">Plans</a>
               </div>
             </div>
           </div>
@@ -159,9 +104,9 @@
           <div class="container-2">
             <div class="como-funciona-img">
               <img
-                src="images/01_slimming.png"
+                src="images/01_slimming.webp"
                 class="scroll-image"
-                alt=""
+                alt="healthy plate with slimming meal" loading="lazy"
               />
             </div>
             <div class="como-funciona-text">
@@ -179,87 +124,33 @@
                 lifestyle.
               </p>
               <p
-                ><i class="fas fa-check green"></i> Answer a
+                > Answer a
                 short questionnaire</p
               >
               <p>
-                <i class="fas fa-check green"></i> Choose
+                 Choose
                 your goals (weight loss, toning, gaining
                 muscle mass)
               </p>
               <p
-                ><i class="fas fa-check green"></i> Receive
+                > Receive
                 a plan tailored to you</p
               >
-              <div class="button">
-                <a href="howItWorks.html">More Info</a>
+              <div class="button" aria-label="More Info">
+                <a href="#">More Info</a>
               </div>
             </div>
           </div>
         </section>
         <div class="numbers"> </div>
-        <section>
-          <div class="pasos-container padding">
-            <div class="pasos-text">
-              <h2>
-                Your Journey with Perfect Diet: <br /><span
-                  class="green"
-                  >Simple Steps for Big Changes</span
-                >
-              </h2>
-              <p>
-                Start today! With small steps, you can
-                transform your health and achieve your ideal
-                goal.
-              </p>
-              <div class="pasos">
-                <h4
-                  ><i class="fas fa-check green"></i>
-                  <span>Initial evaluation</span></h4
-                >
-                <p
-                  >We get to know your habits, goals, and
-                  lifestyle.</p
-                >
-                <h4
-                  ><i class="fas fa-check green"></i>
-                  <span>Plan tailored to you</span></h4
-                >
-                <p
-                  >You receive a personalized diet that
-                  adapts to you.</p
-                >
-                <h4>
-                  <i class="fas fa-check green"></i>
-                  <span
-                    >Accompaniment and real changes</span
-                  ></h4
-                >
-                <p>
-                  We monitor your progress and adjust your
-                  plan. You'll see results!
-                </p>
-              </div>
-              <div class="button">
-                <a href="form.html">Start now</a>
-              </div>
-            </div>
-            <div class="pasos-img">
-              <img
-                src="images/04_vegan.png"
-                class="scroll-image"
-                alt=""
-              />
-            </div>
-          </div>
-        </section>
+        
         <section>
           <div class="cards-container">
             <div class="card">
               <div class="image-container"
                 ><img
-                  src="images/03_menu_balanced.jpg"
-                  alt=""
+                  src="images/03_menu_balanced.webp"
+                  alt="healthy plate with slimming meal" loading="lazy"
               /></div>
 
               <h3>Food Personalization</h3>
@@ -268,15 +159,15 @@
                 those you don't like. The platform will
                 adjust your diet based on your preferences.
               </p>
-              <div class="button">
-                <a href="howItWorks.html">More Info</a>
+              <div class="button" aria-label="More Info">
+                <a href="#">More Info</a>
               </div>
             </div>
             <div class="card">
               <div class="image-container"
                 ><img
-                  src="images/04_menu_vegans.jpg"
-                  alt=""
+                  src="images/04_menu_vegans.webp"
+                  alt="vegans" loading="lazy"
               /></div>
               <h3>Food Personalization</h3>
               <p>
@@ -284,15 +175,15 @@
                 those you don't like. The platform will
                 adjust your diet based on your preferences.
               </p>
-              <div class="button">
-                <a href="howItWorks.html">More Info</a>
+              <div class="button" aria-label="More Info">
+                <a href="#">More Info</a>
               </div>
             </div>
             <div class="card">
               <div class="image-container"
                 ><img
-                  src="images/02_menu_muscle.jpg"
-                  alt=""
+                  src="images/02_menu_muscle.webp"
+                  alt="food" loading="lazy"
               /></div>
               <h3>Food Personalization</h3>
               <p>
@@ -300,51 +191,8 @@
                 those you don't like. The platform will
                 adjust your diet based on your preferences.
               </p>
-              <div class="button">
-                <a href="howItWorks.html">More Info</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="banner">
-            <div class="image-plate">
-              <figure class="wpb_wrapper">
-                <div class="plate_rounded">
-                  <img
-                    src="images/plate_rounded.png"
-                    alt="plato giratorio"
-                  />
-                </div>
-              </figure>
-            </div>
-
-            <div class="banner-text">
-              <h2
-                >Enjoy an Exclusive 15% Discount on your
-                Nutritional Plan</h2
-              >
-              <p
-                >Invest in your well-being and save with
-                this special offer.</p
-              >
-              <ul>
-                <li
-                  >Personalized eating plan based on your
-                  preferences and goals</li
-                >
-                <li
-                  >Nutritional consultation to optimize your
-                  progress</li
-                >
-                <li
-                  >Weight management program with monthly
-                  monitoring</li
-                >
-              </ul>
-              <div class="button">
-                <a href="plans.html">Plans</a>
+              <div class="button" aria-label="More Info">
+                <a href="#">More Info</a>
               </div>
             </div>
           </div>
@@ -365,23 +213,20 @@
                 <h3>What you will see:</h3>
                 <ul>
                   <li
-                    ><i class="fas fa-check green"></i
                     >Visible weight loss.</li
                   >
                   <li
-                    ><i class="fas fa-check green"></i
                     >Healthy and radiant skin</li
                   >
                   <li
-                    ><i class="fas fa-check green"></i>More
+                    >More
                     energy</li
                   >
                   <li
-                    ><i class="fas fa-check green"></i
                     >Greater vitality</li
                   >
                   <li
-                    ><i class="fas fa-check green"></i>More
+                    >More
                     confidence</li
                   >
                 </ul>
@@ -392,13 +237,13 @@
               <div class="transformacion-card-img">
                 <img
                   src="images/transformacion1.webp"
-                  alt=""
+                  alt="tranformations" loading="lazy"
                 />
               </div>
               <div class="transformacion-card-img">
                 <img
                   src="images/transformacion2.webp"
-                  alt=""
+                  alt="transformation" loading="lazy"
                 />
               </div>
             </div>
@@ -410,71 +255,6 @@
             id="recipes-container"
             class="recipes-container"
           ></div>
-        </section>
-
-        <section>
-          <div class="blog-container">
-            <div class="blog-card blog-text">
-              <h3>Blog</h3>
-              <h2>
-                The relationship between nutrition and
-                emotional well-being
-              </h2>
-              <p>
-                Discover how the foods you eat affect your
-                mood and daily energy. Learn how to design a
-                nutritional plan that boosts your physical
-                and mental well-being.
-              </p>
-              <div class="button">
-                <a href="blog.html">Read more</a>
-              </div>
-            </div>
-            <div class="blog-card blog-img">
-              <img src="images/blog1.jpg" alt="" />
-            </div>
-            <div class="blog-card blog-text">
-              <h3>Blog</h3>
-              <h2
-                >How to maintain a balanced diet without
-                sacrifice</h2
-              >
-              <p>
-                Avoid monotony in your diet with simple
-                strategies to enjoy varied meals without
-                losing sight of your goals. Find the perfect
-                balance between health and flavor.
-              </p>
-              <div class="button">
-                <a href="blog.html">Read more</a>
-              </div>
-            </div>
-            <div class="blog-card blog-img">
-              <img
-                src="images/01_menu_slimming.jpg"
-                alt=""
-              />
-            </div>
-            <div class="blog-card blog-text green">
-              <h3>Blog</h3>
-              <h2>
-                The relationship between nutrition and
-                emotional well-being
-              </h2>
-              <p>
-                Discover how the foods you eat affect your
-                mood and daily energy. Learn how to design a
-                nutritional plan that boosts your physical
-                and mental well-being.
-              </p>
-              <div class="button">
-                <a href="blog.html">Read more</a>
-              </div>
-            </div>
-            <div class="blog-card blog-img">
-              <img src="images/blog3.jpg" alt="" />
-            </div>
-          </div>
         </section>
         <section class="newsletter">
           <div class="newsletter-container">
@@ -495,7 +275,7 @@
                 placeholder="Enter your email"
                 required
               />
-              <button type="submit">Subscribe</button>
+             <button class="button" aria-label="Subscribe to our newsletter">SUSCRIBE</button>
               <p id="email-error" class="error-message"></p>
             </form>
           </div>
@@ -503,16 +283,15 @@
         <div class="gradient"></div>
       </main>
 
-      <div class="gradient"></div>
-
+    </div>
       <footer class="footer">
         <div class="footer-top">
-          <div class="footer-section logo-social">
+          <div class="footer-section ">
             <div class="logo">
               <a href="index.html"
                 ><img
                   src="images/favicon.png"
-                  alt="Perfect Diet Logo"
+                  alt="Perfect Diet Logo" loading="lazy" 
               /></a>
               <p
                 >Empowering your lifestyle with quality,
@@ -522,17 +301,13 @@
             </div>
             <div class="social-icons">
               <a href="#"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
+                ><img src="images/facebook.png" alt="logo de facebook"></a>
               <a href="#"
-                ><i class="fa-brands fa-twitter"></i
-              ></a>
+                ><img src="images/instagram.png" alt="logo de instagram"></a>
               <a href="#"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
+                ><img src="images/twitter.png" alt="logo de twitter"></a>
               <a href="#"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
+                ><img src="images/linkedin.png" alt="logo de linkedin"></a>
             </div>
           </div>
 
@@ -542,7 +317,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="blog.html">Blog</a></li>
               <li><a href="plans.html">Products</a></li>
-              <li><a href="howItWorks.html">Clients</a></li>
+              <li><a href="how-it-works.html">Clients</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -551,7 +326,7 @@
             <h4>Contact Info</h4>
 
             <div class="contact-item">
-              <i class="fa-solid fa-location-dot"></i>
+             
               <div>
                 <span>Our location:</span>
                 <p>Goldschmidtstraße 13, 04103 Leipzig</p>
@@ -559,7 +334,7 @@
             </div>
 
             <div class="contact-item">
-              <i class="fa-solid fa-phone-volume"></i>
+              
               <div>
                 <span>Phones:</span>
                 <p>+49078-039-23-11</p>
@@ -570,7 +345,7 @@
         </div>
 
         <div class="footer-bottom">
-          <div class="">
+          <div class="bottom">
             <p>WDD 231 Final Project </p>
             <p>
               &copy;2025 all rights reserved ✨ Viszelle
@@ -584,21 +359,16 @@
         </div>
       </footer>
 
-      <!-- Modal HTML -->
-<div id="recipe-modal" class="modal hidden">
+     
+  <div id="recipe-modal" class="modal hidden">
   <div class="modal-content">
-    <span class="close-btn" id="close-modal">&times;</span>
-    <img id="modal-image" src="" alt="Recipe image">
-    <h3 id="modal-title"></h3>
-    <p id="modal-time"></p>
-    <p id="modal-calories"></p>
-    <p id="modal-description"></p>
+    <span id="close-modal" class="close-btn " aria-label="Close modal">&times;</span>
+    <div id="modal-body">
+      
+    </div>
   </div>
 </div>
 
-
-
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     
 
     <script src="./scripts/main.js" type="module"></script>
