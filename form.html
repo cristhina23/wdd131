@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="From Practice">
-    <meta name="author" content="Viszelle Chacon">
-    <title>From Practice</title>
-    <link rel="stylesheet" href="./styles/form.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <script defer src="./scripts/getdates.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1>Product Review</h1>
-    </header>
-    <main>
-      <form action="review.html" method="get">
-        <label >Product Name</label>
-        <select name="product" id="product">
-          <option value="product1" selected disabled
-            >Choose a Product...</option
-          >
-          <option value="product2">Product 2</option>
-          <option value="product3">Product 3</option>
-        </select>
-        <label >Overall Rating</label>
-        <div class="rating">
-          <div>
-            <label >⭐</label>
-            <input type="radio" />
-          </div>
-          <div>
-            <label >⭐⭐</label>
-            <input type="radio" />
-          </div>
-          <div>
-            <label>⭐⭐⭐</label>
-            <input type="radio" />
-          </div>
-          <div>
-            <label >⭐⭐⭐⭐</label>
-            <input type="radio" />
-          </div>
-          <div>
-            <label >⭐⭐⭐⭐⭐⭐</label>
-            <input type="radio" />
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="From Practice">
+  <meta name="author" content="Viszelle Chacon">
+  <title>From Practice</title>
+  <link rel="stylesheet" href="./styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="./scripts/getdates.js"></script>
+  <script defer src="./scripts/form.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+  <main>
+    <form action="review.html" method="get">
 
-        <label >Date of instalation</label>
-        <input type="date" />
-        <label 
+      <label for="product">Product Name <span>*</span></label>
+      <select name="product" id="product" required aria-required="true">
+        <option value="" selected disabled>Choose a Product...</option>
+        <!-- Options will be added by JS -->
+      </select>
+
+      <label>Overall Rating <span>*</span></label>
+      <div class="rating">
+        <div>
+          <input type="radio" id="star1" name="rating" value="1" required>
+          <label for="star1">⭐</label>
+        </div>
+        <div>
+          <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2">⭐⭐</label>
+        </div>
+        <div>
+          <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3">⭐⭐⭐</label>
+        </div>
+        <div>
+          <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4">⭐⭐⭐⭐</label>
+        </div>
+        <div>
+          <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5">⭐⭐⭐⭐⭐</label>
+        </div>
+      </div>
+
+      <label for="installation">Date of Installation <span>*</span></label>
+      <input type="date" id="installation" name="installation" required aria-required="true">
+
+       <label 
           >Which features do you find useful in the
           product?</label
         >
@@ -71,24 +70,21 @@
         <label
           class ="last"><input type="checkbox" />Design
         </label>
-        <label
-          >Written Review <span>(Optional)</span></label
-        >
-        <textarea name="review" id="review"></textarea>
-        <label 
-          >Your Name <span>(Optional)</span></label
-        >
-        <input type="text" />
 
-        <input type="submit" class="button" value="Post Review">
+      <label for="review">Written Review <span>(Optional)</span></label>
+      <textarea id="review" name="review"></textarea>
 
-      </form>
-    </main>
-    <footer>
-      <p>&copy;2025 ✨ Viszelle Chacon ✨ Venezuela</p>
-      <p> <span id="last-updated"></span></p>
-    </footer>
+      <label for="username">Your Name <span>(Optional)</span></label>
+      <input type="text" id="username" name="username">
 
-    
-  </body>
+      <input type="submit" class="button" value="Post Review">
+
+    </form>
+  </main>
+  <footer>
+    <p>&copy;2025 ✨ Viszelle Chacon ✨ Venezuela</p>
+    <p><span id="last-updated"></span></p>
+  </footer>
+  
+</body>
 </html>
