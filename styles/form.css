@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: "Inter", sans-serif;
+  font-family: "Cabin", sans-serif;
   justify-content: center;
   align-items: center;
 }
@@ -145,4 +145,8 @@ footer span {
 }
 footer p {
   color: #fff;
+}
+
+#review-count {
+  margin-bottom: 30px;
 }

@@ -23,7 +23,7 @@
       <label for="product">Product Name <span>*</span></label>
       <select name="product" id="product" required aria-required="true">
         <option value="" selected disabled>Choose a Product...</option>
-        <!-- Options will be added by JS -->
+        
       </select>
 
       <label>Overall Rating <span>*</span></label>
@@ -59,16 +59,16 @@
         >
         <label >Check all that apply</label>
         <label
-          class="first"><input type="checkbox" />Durability
+          class="first"><input  type="checkbox" id="durability" name="features" value="Durability" />Durability
         </label>
         <label 
-          ><input type="checkbox" />Performance
+          ><input type="checkbox" id="performance" name="features" value="Performance" />Performance
         </label>
         <label 
-          ><input type="checkbox" />Quaity
+          ><input type="checkbox" id="quality" name="features" value="Quality" />Quaity
         </label>
         <label
-          class ="last"><input type="checkbox" />Design
+          class ="last"><input type="checkbox" id="design" name="features" value="Design" />Design
         </label>
 
       <label for="review">Written Review <span>(Optional)</span></label>

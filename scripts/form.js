@@ -10,8 +10,3 @@ const products = [
       opt.textContent = prod.name;
       productSelect.appendChild(opt);
     });
-
-    // getdates.js
-    const lastUpdated = document.querySelector("#last-updated");
-    const today = new Date();
-    lastUpdated.textContent = `Last Updated: ${today.toLocaleDateString()} ${today.toLocaleTimeString()}`;
